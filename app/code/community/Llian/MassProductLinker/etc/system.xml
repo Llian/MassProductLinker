@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <sections>
+      <catalog translate="label">
+         <groups>
+            <massproductlinker translate="label">
+               <label>Mass Product Linker Options</label>
+               <frontend_type>text</frontend_type>
+               <sort_order>1200</sort_order>
+               <show_in_default>1</show_in_default>
+               <show_in_website>1</show_in_website>
+               <show_in_store>1</show_in_store>
+               <comment>Specify here which mass actions provided by Mass Product Linker extension should be available in the 'Manage Products' grid:</comment>
+               <fields>
+                  <cross_sell_to_each_other translate="label">
+                     <label>Cross-sell to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>10</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </cross_sell_to_each_other>
+                  <cross_sell_to translate="label">
+                     <label>Add cross-selling...</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>20</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </cross_sell_to>
+                  <un_cross_sell_to_each_other translate="label">
+                     <label>Stop cross-selling to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>30</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_cross_sell_to_each_other>
+                  <un_cross_sell translate="label">
+                     <label>Completely remove cross-selling</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>40</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_cross_sell>
+
+
+                  <up_sell_to_each_other translate="label">
+                     <label>Up-sell to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>110</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </up_sell_to_each_other>
+                  <up_sell_to translate="label">
+                     <label>Add up-selling...</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>120</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </up_sell_to>
+                  <un_up_sell_to_each_other translate="label">
+                     <label>Stop up-selling to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>130</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_up_sell_to_each_other>
+                  <un_up_sell translate="label">
+                     <label>Completely remove up-selling</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>140</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_up_sell>
+
+
+                  <relate_to_each_other translate="label">
+                     <label>Relate to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>210</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </relate_to_each_other>
+                  <relate_to translate="label">
+                     <label>Relate to...</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>220</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </relate_to>
+                  <un_relate_to_each_other translate="label">
+                     <label>Stop relating to each other</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>230</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_relate_to_each_other>
+                  <un_relate translate="label">
+                     <label>Completely remove relating</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                     <sort_order>240</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </un_relate>
+               </fields>
+            </massproductlinker>
+         </groups>
+      </catalog>
+   </sections>
+</config>
