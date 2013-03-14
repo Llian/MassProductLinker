@@ -28,8 +28,7 @@
 			<modules>
 				<Llian_MassProductLinker>
 					<files>
-						<llianmassproductlinker>Llian_MassProductLinker.csv
-						</llianmassproductlinker>
+						<llianmassproductlinker>Llian_MassProductLinker.csv</llianmassproductlinker>
 					</files>
 				</Llian_MassProductLinker>
 			</modules>
@@ -40,8 +39,7 @@
 			<adminhtml>
 				<args>
 					<modules>
-						<massproductlinker before="Mage_Adminhtml">Llian_MassProductLinker
-						</massproductlinker>
+						<massproductlinker after="Mage_Adminhtml">Llian_MassProductLinker</massproductlinker>
 					</modules>
 				</args>
 			</adminhtml>

@@ -42,7 +42,7 @@ class Llian_MassProductLinker_Model_Observer
 	{
 		$block->addItem($name, array(
 				'label' => $block->__($label),
-				'url' => $block->getUrl('*/*/' . $name)
+				'url' => $block->getUrl('adminhtml/*/' . $name)
 		));
 	}
 
@@ -57,7 +57,7 @@ class Llian_MassProductLinker_Model_Observer
 	{
 		$block->addItem($name, array(
 				'label' => $block->__($label),
-				'url' => $block->getUrl('*/*/' . $name),
+				'url' => $block->getUrl('adminhtml/*/' . $name),
 				'additional' => array(
 						'visibility' => array(
 								'name' => 'link_to',
@@ -92,7 +92,7 @@ class Llian_MassProductLinker_Model_Observer
 	{
 		$block->addItem($name, array(
 				'label' => '------ ' . $block->__($label) . ' ------',
-				'url'   => $block->getUrl('*/*/index')
+				'url'   => $block->getUrl('adminhtml/*/index')
 		));
 	}
 

@@ -1,0 +1,8 @@
+Release Notes
+
+Llian Mass Product Linker 0.2.0 (2013-03-14)
++ compatibility with Enhanced Admin Product Grid
+* minor bug fixes
+
+Llian Mass Product Linker 0.1.0 beta (2012-012-23)
+* initial public release

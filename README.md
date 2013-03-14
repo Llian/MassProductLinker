@@ -1,5 +1,6 @@
 # MassProductLinker - Extension for Magento (CE)
 Adds mass actions for cross-selling, up-selling, and relating products in Magento's manage product grid. 
+If you just want to use this extension, get it [here](http://www.magentocommerce.com/magento-connect/catalog/product/view/id/15731/).
 
 Features:
 * Cross-sell products to each other (two-way)

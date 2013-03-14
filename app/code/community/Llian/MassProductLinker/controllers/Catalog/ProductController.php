@@ -59,8 +59,6 @@ class Llian_MassProductLinker_Catalog_ProductController extends Mage_Adminhtml_C
 				foreach ($prodIDs as $prodID) {
 					$product = Mage::getModel('catalog/product')->load($prodID);
 					$this->_setLinkData($product, array(), $linkType);
-					if ($this->massactionEventDispatchEnabled)
-						Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
 					$product->save();
 				}
 				$this->_getSession()->addSuccess(
@@ -102,8 +100,6 @@ class Llian_MassProductLinker_Catalog_ProductController extends Mage_Adminhtml_C
 						}
 					}
 					$this->_setLinkData($product, $links, $linkType);
-					if ($this->massactionEventDispatchEnabled)
-						Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
 					$product->save();
 				}
 				$this->_getSession()->addSuccess(
@@ -145,9 +141,6 @@ class Llian_MassProductLinker_Catalog_ProductController extends Mage_Adminhtml_C
 						}
 					}
 					$this->_setLinkData($product, $links, $linkType);
-					call_user_func($setLinkDataMethod, $product, $links);
-					if ($this->massactionEventDispatchEnabled)
-						Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
 					$product->save();
 				}
 				$existingLinkCount = count($prodIDs) * (count($prodIDs) - 1) - $newLinkCount;
@@ -199,9 +192,6 @@ class Llian_MassProductLinker_Catalog_ProductController extends Mage_Adminhtml_C
 						}
 					}
 					$this->_setLinkData($product, $links, $linkType);
-					call_user_func($setLinkDataMethod, $product, $links);
-					if ($this->massactionEventDispatchEnabled)
-						Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
 					$product->save();
 				}
 				$existingLinkCount = count($prodIDs) * count($linkToIDs) - $newLinkCount;
