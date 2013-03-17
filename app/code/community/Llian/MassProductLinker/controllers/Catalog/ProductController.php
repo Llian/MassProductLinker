@@ -22,8 +22,6 @@
  * @license   http://www.gnu.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
  */
 
-include_once "Mage/Adminhtml/controllers/Catalog/ProductController.php";
-
 /**
  * Adminhtml controller to perform a number of mass actions in the manage products grid
  *

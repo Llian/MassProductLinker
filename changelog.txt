@@ -1,5 +1,8 @@
 Release Notes
 
+Llian Mass Product Linker 0.2.1 (2013-03-17)
+* solved bug when Magento Compiler is activated
+
 Llian Mass Product Linker 0.2.0 (2013-03-14)
 + compatibility with Enhanced Admin Product Grid
 * minor bug fixes
