@@ -2,7 +2,7 @@
 /**
  * Mass Product Linker
  *
- * Copyright (C) 2012  Llian
+ * Copyright (C) 2013  Llian
  *
  * This program is free software: you can redistribute it and/or modify it under the terms of the 
  * GNU General Public License as published by the Free Software Foundation, either version 3 of the 
@@ -18,7 +18,7 @@
  * @category  Llian
  * @package   Llian_MassProductLinker
  * @author    Llian <info@llian.de>
- * @copyright 2012 Llian (http://www.llian.de). All rights served.
+ * @copyright 2013 Llian (http://www.llian.de). All rights served.
  * @license   http://www.gnu.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
  */
 
@@ -171,8 +171,8 @@ class Llian_MassProductLinker_Catalog_ProductController extends Mage_Adminhtml_C
 		$collection = Mage::getResourceModel('catalog/product_collection')
 		->addFieldToFilter('entity_id',array('in'=>$linkToIDs));
 		$linkToIDs = array_values($collection->getAllIds());
-		if (!is_array($prodIDs) or (count($prodIDs) < 2)) {
-			$this->_getSession()->addError($this->__('Please select at least two products.'));
+		if (!is_array($prodIDs) or (count($prodIDs) < 1)) {
+			$this->_getSession()->addError($this->__('Please select at least one product.'));
 		}
 		if (count($linkToIDs) < 1) {
 			$this->_getSession()->addError($this->__('Please enter at least one product to link to. Enter product IDs (not SKUs) delimited by commas.'));
