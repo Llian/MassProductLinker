@@ -1,0 +1,115 @@
+<_>
+   <form_key>PdjWmC3RKwtPv4JE</form_key>
+   <name>Llian_MassProductLinker</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>Adds mass actions for cross-selling, up-selling, and relating products in Magento&apos;s manage product grid</summary>
+   <description>Adds mass actions for cross-selling, up-selling, and relating products in Magento&apos;s manage product grid.
+
+Features:
+
+* Cross-sell products to each other (two-way)
+* Mass cross-sell products to other products (one-way)
+* Remove all cross-sells from several products at once
+* Stop cross-selling products to each other, but leave other cross-sells from these products untouched
+* Do all of the above for up-sells and related products, too
+* All mass actions can be independently activated or deactivated in Magento&apos;s system configuration
+* Compatible with Enhanced Admin Product Grid</description>
+   <license>GNU General Public License (GPL)</license>
+   <license_uri>http://www.gnu.org/licenses/gpl.html</license_uri>
+   <version>0.2.2</version>
+   <stability>stable</stability>
+   <notes>Release Notes
+
+Llian Mass Product Linker 0.2.2 (2013-06-02)
+* solved bug when adding cross selling to only one product
++ now considered stable
+
+Llian Mass Product Linker 0.2.1 (2013-03-17)
+* solved bug when Magento Compiler is activated
+
+Llian Mass Product Linker 0.2.0 (2013-03-14)
++ compatibility with Enhanced Admin Product Grid
+* minor bug fixes
+
+Llian Mass Product Linker 0.1.0 beta (2012-012-23)
+* initial public release
+</notes>
+   <authors>
+      <name>
+         <name>Llian</name>
+      </name>
+      <user>
+         <user>Llian</user>
+      </user>
+      <email>
+         <email>info@llian.de</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.13</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>        </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+         <target>magelocale</target>
+      </target>
+      <path>
+         <path/>
+         <path>Llian/MassProductLinker</path>
+         <path>modules/Llian_MassProductLinker.xml</path>
+         <path/>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include>#Llian_MassProductLinker.csv#</include>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

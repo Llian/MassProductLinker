@@ -1,0 +1,5 @@
+app/code/community/Llian/MassProductLinker		app/code/community/Llian/MassProductLinker
+app/etc/modules/Llian_MassProductLinker.xml		app/etc/modules/Llian_MassProductLinker.xml
+app/locale/de_DE/Llian_MassProductLinker.csv	app/locale/de_DE/Llian_MassProductLinker.csv
+var/connect/Llian_MassProductLinker.xml			var/connect/Llian_MassProductLinker.xml
+
